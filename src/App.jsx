@@ -253,8 +253,28 @@ function Experience() {
         <Reveal>
           <div className="books">
             <p className="books-label mono">// foundations from the books</p>
-            <div className="chips">
-              {books.map((b) => <span className="chip" key={b}>{b}</span>)}
+            <div className="books-grid">
+              {books.map((b) => (
+                <a className="book-card" href={b.amazon} target="_blank" rel="noreferrer" key={b.title}>
+                  <div className="book-cover">
+                    <img
+                      src={b.cover}
+                      alt={`${b.title} cover`}
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none'
+                        e.currentTarget.nextElementSibling.style.display = 'grid'
+                      }}
+                    />
+                    <span className="book-cover-fallback" aria-hidden="true">{b.title}</span>
+                  </div>
+                  <div className="book-meta">
+                    <h4>{b.title}</h4>
+                    <p>{b.author}</p>
+                    <span className="project-link mono">AMAZON ↗</span>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </Reveal>

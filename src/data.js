@@ -45,13 +45,48 @@ export const skills = [
 ]
 
 export const books = [
-  'HTTP: The Definitive Guide',
-  'Designing Data-Intensive Applications',
-  'High Performance Browser Networking',
-  'Database Internals',
-  "The Web Application Hacker's Handbook",
-  'Designing Distributed Systems',
-  'The Tangled Web',
+  {
+    title: 'HTTP: The Definitive Guide',
+    author: 'David Gourley & Brian Totty',
+    cover: 'https://covers.openlibrary.org/b/isbn/9781565925090-L.jpg',
+    amazon: 'https://www.amazon.com/dp/1565925092',
+  },
+  {
+    title: 'Designing Data-Intensive Applications',
+    author: 'Martin Kleppmann',
+    cover: 'https://covers.openlibrary.org/b/id/8434671-L.jpg',
+    amazon: 'https://www.amazon.com/dp/1449373321',
+  },
+  {
+    title: 'High Performance Browser Networking',
+    author: 'Ilya Grigorik',
+    cover: 'https://covers.openlibrary.org/b/id/7863302-L.jpg',
+    amazon: 'https://www.amazon.com/dp/1449344763',
+  },
+  {
+    title: 'Database Internals',
+    author: 'Alex Petrov',
+    cover: 'https://covers.openlibrary.org/b/id/14572292-L.jpg',
+    amazon: 'https://www.amazon.com/dp/1492040347',
+  },
+  {
+    title: "The Web Application Hacker's Handbook",
+    author: 'Dafydd Stuttard & Marcus Pinto',
+    cover: 'https://covers.openlibrary.org/b/id/8733893-L.jpg',
+    amazon: 'https://www.amazon.com/dp/1118026470',
+  },
+  {
+    title: 'Designing Distributed Systems',
+    author: 'Brendan Burns',
+    cover: 'https://covers.openlibrary.org/b/id/8509962-L.jpg',
+    amazon: 'https://www.amazon.com/dp/1491983647',
+  },
+  {
+    title: 'The Tangled Web',
+    author: 'Michal Zalewski',
+    cover: 'https://covers.openlibrary.org/b/id/9733851-L.jpg',
+    amazon: 'https://www.amazon.com/dp/1593273886',
+  },
 ]
 
 export const experience = [
