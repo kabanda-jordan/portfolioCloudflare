@@ -282,7 +282,7 @@ function Skills() {
 function Projects() {
   return (
     <section id="projects" className="section">
-      <div className="wrap">
+      <div className="wrap wrap-wide">
         <SectionHead kicker="04 · work" title="Products that shipped" />
         <div className="projects">
           {projects.map((p, i) => (
