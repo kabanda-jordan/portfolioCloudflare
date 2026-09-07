@@ -1,0 +1,7 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# raw screenshots (project preview copies live in public/projects)
+Screenshot *.png
