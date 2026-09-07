@@ -101,15 +101,27 @@ function Reveal({ children, delay = 0, className = '' }) {
 }
 
 function Nav() {
+  const [open, setOpen] = useState(false)
+
   return (
     <header className="nav">
       <a className="brand mono" href="#top">KJ.</a>
-      <nav>
+      <nav className={open ? 'nav-open' : ''}>
         {sections.map((s) => (
-          <a key={s.id} href={`#${s.id}`} className="mono">{s.label}</a>
+          <a key={s.id} href={`#${s.id}`} className="mono" onClick={() => setOpen(false)}>{s.label}</a>
         ))}
       </nav>
-      <a className="nav-cta btn btn-ghost" href="#contact">Hire me</a>
+      <div className="nav-right">
+        <a className="nav-cta btn btn-ghost" href="#contact">Hire me</a>
+        <button
+          className="nav-toggle mono"
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-expanded={open}
+          onClick={() => setOpen((o) => !o)}
+        >
+          {open ? '✕' : '☰'}
+        </button>
+      </div>
     </header>
   )
 }
