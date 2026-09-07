@@ -11,6 +11,7 @@ export const site = {
 
 export const socials = {
   github: 'https://github.com/kabanda-jordan',
+  linkedin: 'https://www.linkedin.com/in/jordan-kabanda-2932a7336/',
   email: 'kabandajordan784@gmail.com',
 }
 

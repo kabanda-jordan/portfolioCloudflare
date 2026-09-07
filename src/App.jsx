@@ -282,7 +282,7 @@ function Skills() {
 function Projects() {
   return (
     <section id="projects" className="section">
-      <div className="wrap wrap-wide">
+      <div className="wrap">
         <SectionHead kicker="04 · work" title="Products that shipped" />
         <div className="projects">
           {projects.map((p, i) => (
@@ -331,7 +331,7 @@ function Contact() {
           <div className="contact-links mono">
             <a href={`mailto:${socials.email}`}>Email</a>
             <a href={socials.github} target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a href="https://www.linkedin.com/in/kabanda-jordan" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://www.linkedin.com/in/jordan-kabanda-2932a7336/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           </div>
         </Reveal>
       </div>
