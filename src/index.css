@@ -373,8 +373,8 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; }
 }
 
 /* ---------- layout & sections ---------- */
-main { position: relative; z-index: 2; opacity: 0; }
-main.site-enter { animation: site-fade 1.2s ease 0.2s forwards; }
+main { position: relative; z-index: 2; opacity: 1; }
+main.site-enter { animation: site-fade 1.2s ease 0.2s backwards; }
 
 @keyframes site-fade {
   from { opacity: 0; }

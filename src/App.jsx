@@ -343,15 +343,14 @@ function Contact() {
 }
 
 export default function App() {
-  const [entering, setEntering] = useState(true)
   const [host, setHost] = useState(false)
 
   return (
     <>
-      {!host && <Preloader done={() => { setEntering(false); setHost(true) }} />}
+      {!host && <Preloader done={() => setHost(true)} />}
       <div className="grain" aria-hidden="true" />
       <Nav />
-      <main className={entering ? 'site-enter' : ''}>
+      <main className="site-enter">
         <Hero />
         <About />
         <Experience />
